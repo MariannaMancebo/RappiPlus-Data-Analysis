@@ -2,6 +2,16 @@
 
 Proyecto final del bootcamp de Análisis de Datos de TripleTen. Se evalúa el desempeño comercial de RappiPlus mediante limpieza de datos, análisis de rentabilidad, embudo de conversión, retención por cohortes, experimentación estadística y un dashboard en Power BI.
 
+## Por dónde empezaría a revisar el negocio
+
+El resultado general era positivo, pero quería saber si escondía pedidos con pérdidas o dificultades durante la compra. Por eso analicé ingresos y costos junto con el ticket promedio, el embudo, la actividad por cohortes y la conversión del experimento de checkout.
+
+El 18.18 % de los pedidos con costos conocidos presentaba pérdidas. Revisaría primero los precios, costos y la proporción de operaciones con pérdida de los productos afectados: tener muchas ventas no significa que cada pedido sea rentable. La ganancia estimada del conjunto tampoco equivale a utilidad neta, porque faltan gastos operativos.
+
+En el embudo, la mayor diferencia entre conteos de usuarios apareció entre el inicio del checkout y el registro de información de pago. Mi siguiente paso sería revisar el seguimiento de eventos y reconstruir los recorridos, antes de afirmar dónde abandonan la compra. El experimento de la nueva interfaz tampoco aportó evidencia suficiente de mejora (p = 0.4161), así que no la implementaría solo por una conversión ligeramente mayor.
+
+Estas observaciones se tradujeron en tres prioridades: revisar las operaciones con pérdidas, comprobar la calidad del registro de eventos y continuar evaluando el checkout. El notebook y el dashboard permiten explorar los datos que sustentan cada recomendación.
+
 ## Herramientas
 Python, pandas, SQL (PostgreSQL), pruebas estadísticas y Power BI.
 
